@@ -1,0 +1,33 @@
+<!-- public/hub.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Skin Game - Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Welcome, <span id="player-name"></span>!</h1>
+  <h2>Currency: <span id="player-currency"></span></h2>
+
+  <div id="hub-buttons">
+    <button onclick="alert('Coming soon')">🔄 Trade</button>
+    <button onclick="alert('Coming soon')">🎁 Open Crates</button>
+    <button onclick="alert('Coming soon')">📆 Daily Challenges</button>
+    <button onclick="logout()">🚪 Logout</button>
+  </div>
+
+  <script>
+    const name = localStorage.getItem('username');
+    const currency = localStorage.getItem('currency');
+    if (!name) window.location.href = 'index.html';
+
+    document.getElementById('player-name').innerText = name;
+    document.getElementById('player-currency').innerText = currency;
+
+    function logout() {
+      localStorage.clear();
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
