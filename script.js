@@ -1,5 +1,5 @@
 // Change this to your actual Render backend URL after deployment:
-const API_URL = 'http://localhost:3001'; // or 'https://your-app.onrender.com'
+const API_URL = 'wss://tradebackend-duyo.onrender.com';
 
 async function signup() {
   const username = document.getElementById('username').value.trim();
