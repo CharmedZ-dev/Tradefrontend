@@ -1,0 +1,32 @@
+/* public/styles.css */
+body {
+  font-family: Arial;
+  text-align: center;
+  padding: 2rem;
+  background: #111;
+  color: white;
+}
+#auth-box {
+  max-width: 300px;
+  margin: auto;
+  background: #222;
+  padding: 2rem;
+  border-radius: 10px;
+}
+input {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  width: 80%;
+}
+button {
+  margin: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+button:hover {
+  background: #666;
+}
